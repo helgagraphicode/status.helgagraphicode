@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.container {
+    text-align: center;
+}
+
+#title {
+    font-size: 3em;
+    color: blue;
+}
