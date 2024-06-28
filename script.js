@@ -1,13 +1,11 @@
-// Animasi unik saat website dibuka
-document.addEventListener('DOMContentLoaded', function() {
-    const title = document.getElementById('title');
-    title.style.opacity = 0;
-    
-    let opacity = 0;
-    const fadeIn = setInterval(function() {
-        opacity += 0.05;
-        title.style.opacity = opacity;
-        
-        if (opacity >= 1) clearInterval(fadeIn);
-    }, 50);
+// You can add JavaScript here if you need interactivity or animations
+// For example, a simple animation on profile picture hover:
+const profilePicture = document.querySelector('.profile-header img');
+
+profilePicture.addEventListener('mouseenter', function() {
+  this.style.transform = 'scale(1.1)';
+});
+
+profilePicture.addEventListener('mouseleave', function() {
+  this.style.transform = 'scale(1)';
 });
